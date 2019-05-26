@@ -282,7 +282,7 @@
     "Description": "This Pokémon is immune to becoming confused."
   },
   "Paper Thin": {
-    "Description": "This Pokémon always has a maximum HP of 1."
+    "Description": "This Pokémon always has a maximum HP of 1.", "support": "fully"
   },
   "Pickpocket": {
     "Description": "As a bonus action, this Pokémon can make a DEX check contested by the opponent’s WIS to attempt to steal a held item. After the first attempt, all other attempts against the same opponent are rolled at disadvantage."

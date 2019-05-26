@@ -123,6 +123,10 @@ function M.get_ability_description(ability)
 	end
 end
 
+function M.get_ability_support(ability)
+	return abilities[ability].support
+end
+
 function M.get_pokemon_hidden_ability(pokemon)
 	return M.get_pokemon(pokemon)["Hidden Ability"]
 end

@@ -9,24 +9,28 @@ local M = {}
 local active_ability_lists = {[1]={}, [2]={}}
 local active_page
 
-local function setup_entry(nodes, name, desc, p, i)
-	local root_node
-	local name_node
-	local desc_node
-	local background_node
+local m = {fully="star_full", partial="star_partial"}
+
+local function setup_entry(nodes, name, desc, p, i, support)
+
+	local root_node = gui.clone(nodes["pokemon/ability/root"])
+	local star_node = gui.clone(nodes["pokemon/ability/support"])
+	local name_node = gui.clone(nodes["pokemon/ability/name"])
+	local desc_node = gui.clone(nodes["pokemon/ability/description"])
+	local background_node = gui.clone(nodes["pokemon/ability/background"])
 	
-	root_node = gui.clone(nodes["pokemon/ability/root"])
-	name_node = gui.clone(nodes["pokemon/ability/name"])
-	desc_node = gui.clone(nodes["pokemon/ability/description"])
-	background_node = gui.clone(nodes["pokemon/ability/background"])
 	gui.set_parent(background_node, root_node)
 	gui.set_parent(name_node, root_node)
 	gui.set_parent(desc_node, root_node)
+	gui.set_parent(star_node, root_node)
 	gui.set_inherit_alpha(background_node, false)
 	gui.set_inherit_alpha(name_node, false)
 	gui.set_inherit_alpha(desc_node, false)
+	gui.set_inherit_alpha(star_node, false)
+	gui.set_enabled(star_node, true)
 	gui.set_enabled(root_node, true)
-
+	print(name, m[support])
+	gui.play_flipbook(star_node, m[support] or "transparent")
 	gui.set_position(root_node, p)
 	gui.set_text(name_node, name:upper())
 	gui.set_text(desc_node, desc)
@@ -49,8 +53,8 @@ local function setup_entry(nodes, name, desc, p, i)
 end
 
 local function setup_features(nodes, pokemon)
-	local function _setup(list, name, desc, index, p)
-		local root_node = setup_entry(nodes, name, desc, p, index)
+	local function _setup(list, name, desc, index, p, support)
+		local root_node = setup_entry(nodes, name, desc, p, index, support)
 		local id = party_utils.set_id(root_node)
 		table.insert(list.data, id)
 		
@@ -69,7 +73,8 @@ local function setup_features(nodes, pokemon)
 		for i, name in pairs(abilities) do
 			index = index + 1
 			local desc = pokedex.get_ability_description(name)
-			_setup(list, name, desc, index, p)
+			local sup = pokedex.get_ability_support(name)
+			_setup(list, name, desc, index, p, sup)
 		end
 		table.insert(active_ability_lists[active_page], list)
 	end
@@ -77,7 +82,8 @@ local function setup_features(nodes, pokemon)
 		for i, name in pairs(feats) do
 			index = index + 1
 			local desc = _feats.get_feat_description(name)
-			_setup(list, name, desc, index, p)
+			local sup = _feats.get_feat_support(name)
+			_setup(list, name, desc, index, p, sup)
 		end
 		table.insert(active_ability_lists[active_page], list)
 	end

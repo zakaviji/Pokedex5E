@@ -31,4 +31,8 @@ function M.get_feat_description(name)
 	end
 end
 
+function M.get_feat_support(name)
+	return feats[name].support
+end
+
 return M

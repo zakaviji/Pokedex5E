@@ -874,8 +874,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 75.0
-    y: 75.0
+    x: 72.0
+    y: 72.0
     z: 0.0
     w: 1.0
   }
@@ -887,7 +887,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "gui/menu_party"
+  texture: "gui/sort_type"
   id: "btn_party"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
