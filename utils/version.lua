@@ -32,10 +32,10 @@ local function is_outdated(new, old)
 		return true
 	else
 		if v2 <= r2 then
-			if v3<= r3 then
+			if v3 <= r3 then
 				return false
 			else
-				return false
+				return true
 			end
 		else
 			return true
@@ -44,15 +44,13 @@ local function is_outdated(new, old)
 end
 
 function M.check_version()
-	flow.start(function() 
-		get_version_from_github()
-		local app = get_local_version()
-		flow.until_true(function() return M.RESPONSE end)
-		if M.RESPONSE ~= true then
-			return is_outdated(M.RESPONSE, app)
-		end
-		return false
-	end)
+	get_version_from_github()
+	local app = get_local_version()
+	flow.until_true(function() return M.RESPONSE end)
+	if M.RESPONSE ~= true then
+		return is_outdated(M.RESPONSE, app)
+	end
+	return false
 end
 
 

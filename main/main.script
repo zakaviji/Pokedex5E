@@ -42,7 +42,6 @@ local function window_resized()
 end
 
 function init(self)
-	print(version.check_version())
 	local system = sys.get_sys_info().system_name
 	window.set_listener(window_resized)
 	
@@ -96,6 +95,10 @@ function init(self)
 			msg.post("#", "show_storage")
 		else
 			msg.post("#", "show_add")
+		end
+		if version.check_version() then
+			flow.until_true(function() return not monarch.is_busy() end)
+			monarch.show("info", nil, {text="\nYou are running an outdated version\nPlease update to get all the new bug fixes!"})
 		end
 	end)
 end
