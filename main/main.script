@@ -42,7 +42,7 @@ local function window_resized()
 end
 
 function init(self)
-	version.check_version()
+	print(version.check_version())
 	local system = sys.get_sys_info().system_name
 	window.set_listener(window_resized)
 	
