@@ -1,0 +1,902 @@
+[
+  {
+		"name": "Adaptability",
+		"meta": "Ability",
+		"desc": "This Pokémon's STAB is increased by +1 at all levels."
+	},
+	{
+		"name": "Aftermath",
+		"meta": "Ability",
+		"desc": "This Pokémon deals damage to an attacker equal to half of the damage received when knocked out by a melee move."
+	},
+	{
+		"name": "Air Lock",
+		"meta": "Ability",
+		"desc": "While this Pokémon is in battle, weather-related abilities have no effect on the Pokémon that have them."
+	},
+	{
+		"name": "Air Slash",
+		"meta": "Ability",
+		"desc": "This Pokémon knows Air Slash as a fifth move. The move is forgotten if it takes any other form."
+	},
+	{
+		"name": "Analytic",
+		"meta": "Ability",
+		"desc": "After this Pokémon misses an attack, its next attack is done at advantage."
+	},
+	{
+		"name": "Anger Point",
+		"meta": "Ability",
+		"desc": "After suffering a critical hit, this Pokémon adds proficiency to its damage if its next attack hits."
+	},
+	{
+		"name": "Anticipation",
+		"meta": "Ability",
+		"desc": "When this Pokémon enters the battle, an opponent must reveal if it has a move that the Pokémon is vulnerable to. The move does not have to be revealed - only that there is such a move."
+	},
+	{
+		"name": "Aqua Camoflauge",
+		"meta": "Ability",
+		"desc": "Once per short rest, this Pokémon gains temporary hit points equal to its level when battling in coastal and swampy areas, or in rainy conditions."
+	},
+	{
+		"name": "Arena Trap",
+		"meta": "Ability",
+		"desc": "Wild Pokémon cannot flee from this Pokémon if it is active in battle, except if they are flying-type, or use the Levitate ability,."
+	},
+	{
+		"name": "Bad Dreams",
+		"meta": "Ability",
+		"desc": "If an opponent in battle with this Pokémon falls asleep, they take an amount of damage equal to this Pokémon's proficeincy bonus at the end of each of their turns."
+	},
+	{
+		"name": "Battle Armor",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to extra damage dealt by a Critical Hit."
+	},
+	{
+		"name": "Big Pecks",
+		"meta": "Ability",
+		"desc": "This Pokémon's AC cannot be reduced by an opponent's moves."
+	},
+	{
+		"name": "Blaze",
+		"meta": "Ability",
+		"desc": "When this Pokémon falls below 25% of its maximum HP, double the STAB damage for its fire-type moves."
+	},
+	{
+		"name": "Blizzard",
+		"meta": "Ability",
+		"desc": "This Pokémon knows Blizzard as a fifth move. The move is forgotten if it takes any other form."
+	},
+	{
+		"name": "Burrower",
+		"meta": "Ability",
+		"desc": "This Pokémon can burrow underground traveling a distance equal to its walking speed before re-emerging."
+	},
+	{
+		"name": "Cacophony",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to sound-based moves."
+	},
+	{
+		"name": "Chlorophyll",
+		"meta": "Ability",
+		"desc": "This Pokémon’s speed is doubled in bright sunlight."
+	},
+	{
+		"name": "Clear Body",
+		"meta": "Ability",
+		"desc": "Other Pokémon's moves or abilities cannot lower this Pokémon stats."
+	},
+	{
+		"name": "Cloud Nine",
+		"meta": "Ability",
+		"desc": "While this Pokémon is in battle, weather-related abilities have no effect on the Pokémon that have them."
+	},
+	{
+		"name": "Color Change",
+		"meta": "Ability",
+		"desc": "When hit by a damaging attack, this Pokémon's type changes to the type that hit it. It takes on the new type's resistances, vulnerabilities, and immunities."
+	},
+	{
+		"name": "Competitive",
+		"meta": "Ability",
+		"desc": "This Pokémon adds its proficiency bonus to damage rolls while poisoned, burned, confused, or paralyzed."
+	},
+	{
+		"name": "Compound Eyes",
+		"meta": "Ability",
+		"desc": "This Pokémon gets an additional +1 to attack rolls."
+	},
+	{
+		"name": "Contrary",
+		"meta": "Ability",
+		"desc": "Moves that affect this Pokémon's stats have the opposite effect. (For example, Defense Curl would lower AC by 4. Growl would increase its attack by +1)"
+	},
+	{
+		"name": "Cursed Body",
+		"meta": "Ability",
+		"desc": "When hit by a melee attack, this Pokémon may roll 1d4. On a result of 4, the opponent who made the attack cannot use the same move on its next turn."
+	},
+	{
+		"name": "Cute Charm",
+		"meta": "Ability",
+		"desc": "Once per short rest, you can impose disadvantage on an enemy attack roll of your choice."
+	},
+	{
+		"name": "Damp",
+		"meta": "Ability",
+		"desc": "This Pokémon is unaffected by Self Destruct and Explosion moves."
+	},
+	{
+		"name": "Defeatist",
+		"meta": "Ability",
+		"desc": "When this Pokémon drops below 25% of its maximum HP, all of its attacks are rolled with disadvantage."
+	},
+	{
+		"name": "Defiant",
+		"meta": "Ability",
+		"desc": "When this Pokémon is subject to a move that gives it a status condition, it has advantage on the next attack."
+	},
+	{
+		"name": "Download",
+		"meta": "Ability",
+		"desc": "Once per short rest, this Pokémon can choose a different damage type for one of their normal attacks."
+	},
+	{
+		"name": "Drizzle",
+		"meta": "Ability",
+		"desc": "A constant light rain forms on the battlefield when the Pokémon enters into combat. In the case of another Pokémon with a similar weather ability, the tie goes to the Pokémon with the highest DEX score."
+	},
+	{
+		"name": "Drought",
+		"meta": "Ability",
+		"desc": "When this Pokémon enters an outside battle, the weather immediately changes to bright sunlight. In the case of another Pokémon with a similar weather ability, the tie goes to the Pokémon with the highest DEX score."
+	},
+	{
+		"name": "Dry Skin",
+		"meta": "Ability",
+		"desc": "At the end of each of this Pokémon's turns, it takes an amount of damage equal to its proficiency modifier in strong sunlight, or heals for the same amount during rain."
+	},
+	{
+		"name": "Early Bird",
+		"meta": "Ability",
+		"desc": "This Pokémon has advantage on rolls to wake from sleep."
+	},
+	{
+		"name": "Effect Spore",
+		"meta": "Ability",
+		"desc": "When hit by a melee attack, roll a d4. On a 4, deal an amount of grass damage equal to your proficiency modifier to your attacker."
+	},
+	{
+		"name": "Filter",
+		"meta": "Ability",
+		"desc": "When hit by a move type this Pokémon is vulnerable to, it may roll a d4. In a result of 4, it does not take the additional damage."
+	},
+	{
+		"name": "Flame Body",
+		"meta": "Ability",
+		"desc": "The flames from this Pokémon's body shine dim light in a 15 ft radius. In addition, when hit by a melee attack, roll a d10. On a 10, the attacker is burned."
+	},
+	{
+		"name": "Flare Boost",
+		"meta": "Ability",
+		"desc": "This Pokémon adds proficiency to its damage rolls while burned."
+	},
+	{
+		"name": "Flash Fire",
+		"meta": "Ability",
+		"desc": "This Pokémon takes no damage from fire. Instead, immediately after taking a hit from a fire-type move, or in open flames, double the STAB bonus on the next fire-type move."
+	},
+	{
+		"name": "Flower Gift",
+		"meta": "Ability",
+		"desc": "During strong sunlight, ally Pokémon within 30 feet of this Pokémon add their proficiency bonus to damage rolls."
+	},
+	{
+		"name": "Forecast",
+		"meta": "Ability",
+		"desc": "This Pokémon changes form with the weather. In rain it becomes water-type, in bright sun it becomes fire-type, in cold and snowy conditions it becomes ice-type. In all other conditions it is normal-type. Its STAB, resistance, immunities, and vulnerabilities change to match the form it takes.v"
+	},
+	{
+		"name": "Forewarn",
+		"meta": "Ability",
+		"desc": "When this Pokémon enters battle, it selects a target to reveal the move it knows with the most damage output. In the case of a tie, the target can choose which move it reveals."
+	},
+	{
+		"name": "Friend Guard",
+		"meta": "Ability",
+		"desc": "Once per long rest, when an ally within 15 feet of this Pokémon is hit by an attack, it may choose to halve the damage dealt."
+	},
+	{
+		"name": "Frisk",
+		"meta": "Ability",
+		"desc": "Upon entering a battle, a single opponent’s held item is revealed, if it has one."
+	},
+	{
+		"name": "Gluttony",
+		"meta": "Ability",
+		"desc": "This Pokémon must eat its held berry when it falls below ½ of its maximum HP."
+	},
+	{
+		"name": "Guts",
+		"meta": "Ability",
+		"desc": "When this Pokémon is burned or poisoned, they are not affected by the disadvantage or half damage effects. They still take damage at the end of each of their turns."
+	},
+	{
+		"name": "Harvest",
+		"meta": "Ability",
+		"desc": "At the end of this Pokémon's turn, if it used a berry, roll 1d4. On a result of 3 or 4, it regains that berry as a held item."
+	},
+	{
+		"name": "Healer",
+		"meta": "Ability",
+		"desc": "As an action, this Pokémon can touch an ally to restore a negative status effect."
+	},
+	{
+		"name": "Healing Rain",
+		"meta": "Ability",
+		"desc": "This Pokémon can use its action to heal hit points equal to its level, in rainy conditions."
+	},
+	{
+		"name": "Heatproof",
+		"meta": "Ability",
+		"desc": "This Pokémon takes quarter damage from fire-type moves and is immune to the burning condition."
+	},
+	{
+		"name": "Heavy Metal",
+		"meta": "Ability",
+		"desc": "This Pokémon is especially heavy. Once per long rest, after being targeted by an attack, it may increase its AC by 2 if it would cause an attack to miss."
+	},
+	{
+		"name": "Honey Gather",
+		"meta": "Ability",
+		"desc": "At the end of each battle, this Pokémon may roll a d20. On a result of 20, its trainer adds a Honey to its inventory."
+	},
+	{
+		"name": "Huge Power",
+		"meta": "Ability",
+		"desc": "Once per short rest, this Pokémon may double the damage it does on a single move that requires an attack roll. The player must announce that they are using this ability before the attack roll."
+	},
+	{
+		"name": "Hustle",
+		"meta": "Ability",
+		"desc": "When this Pokémon scores a critical hit, it may immediately use the same move to attack again at disadvantage."
+	},
+	{
+		"name": "Hydration",
+		"meta": "Ability",
+		"desc": "This Pokémon is unaffected by negative status ailments in water or during rainy conditions."
+	},
+	{
+		"name": "Hydro Pump",
+		"meta": "Ability",
+		"desc": "This Pokémon knows Hydro Pump as a fifth move. The move is forgotten if it takes any other form."
+	},
+	{
+		"name": "Hyper Cutter",
+		"meta": "Ability",
+		"desc": "This Pokémon’s ability modifiers cannot be decreased by an opponent’s moves."
+	},
+	{
+		"name": "Ice Body",
+		"meta": "Ability",
+		"desc": "While it is snowing or hailing, this Pokémon heals for an amount of HP equal to its proficiency modifier at the end of each of its turns."
+	},
+	{
+		"name": "Illuminate",
+		"meta": "Ability",
+		"desc": "This Pokémon knows the \"Light\" cantrip and can cast it at will."
+	},
+	{
+		"name": "Illusion",
+		"meta": "Ability",
+		"desc": "Once per long rest, this Pokémon can take the visual form of any Pokémon it can see. This illusion lasts for one minute, or until the Pokémon is hit by a damaging move."
+	},
+	{
+		"name": "Immunity",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to becoming poisoned."
+	},
+	{
+		"name": "Imposter",
+		"meta": "Ability",
+		"desc": "This Pokémon can use Transform as a bonus action."
+	},
+	{
+		"name": "Infiltrator",
+		"meta": "Ability",
+		"desc": "This Pokémon bypasses Light Screen and Reflect."
+	},
+	{
+		"name": "Inner Focus",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to flinching."
+	},
+	{
+		"name": "Insomnia",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to sleep."
+	},
+	{
+		"name": "Intimidate",
+		"meta": "Ability",
+		"desc": "Once per short rest, you can impose disadvantage on an enemy attack roll of your choice."
+	},
+	{
+		"name": "Iron Barbs",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a melee attack, it may roll a d4. On a 4, deal an amount of normal damage equal to its proficiency modifier to its attacker."
+	},
+	{
+		"name": "Iron Fist",
+		"meta": "Ability",
+		"desc": "When attacking with a punch-based move (Mega Punch, Dynamic Punch, Ice/Fire/Thunder Punch, etc.), this Pokémon may roll the damage twice and take the higher result."
+	},
+	{
+		"name": "Justified",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a dark-type move, it gets advantage on its next attack."
+	},
+	{
+		"name": "Keen Eye",
+		"meta": "Ability",
+		"desc": "This Pokémon ignores disadvantage when it relates to sight."
+	},
+	{
+		"name": "Klutz",
+		"meta": "Ability",
+		"desc": "This Pokémon cannot hold an item."
+	},
+	{
+		"name": "Leaf Guard",
+		"meta": "Ability",
+		"desc": "This Pokémon does not suffer from any negative status ailments in bright sunlight."
+	},
+	{
+		"name": "Leaf Storm",
+		"meta": "Ability",
+		"desc": "This Pokémon knows Leaf Storm as a fifth move. The move is forgotten if it takes any other form."
+	},
+	{
+		"name": "Levitate",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to ground moves."
+	},
+	{
+		"name": "Light Metal",
+		"meta": "Ability",
+		"desc": "This Pokémon is especially light for its species. Once per long rest, it may impose disadvantage on an attack roll against it."
+	},
+	{
+		"name": "Lightning Rod",
+		"meta": "Ability",
+		"desc": "If an ally within 30 feet is attacked with an electric type move, this Pokémon can choose to use a reaction to redirect that attack to themselves instead. This does not work on area of effect moves."
+	},
+	{
+		"name": "Limber",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to being paralyzed."
+	},
+	{
+		"name": "Liquid Ooze",
+		"meta": "Ability",
+		"desc": "If an enemy uses a leeching or absorb move against this Pokémon, the Pokémon must make a DC 12 CON save or become poisoned."
+	},
+	{
+		"name": "Magic Bounce",
+		"meta": "Ability",
+		"desc": "Once per long rest, when succumbing to a negative status effect, this Pokémon can instead reflect the effect back on the attacker."
+	},
+	{
+		"name": "Magic Guard",
+		"meta": "Ability",
+		"desc": "If this Pokémon is subjected to a move that forces it to make a saving throw to take only half damage, it instead takes no damage on a success."
+	},
+	{
+		"name": "Magma Armor",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to freezing."
+	},
+	{
+		"name": "Magnet Pull",
+		"meta": "Ability",
+		"desc": "Steel opponents in battle with this Pokémon may not switch out or flee."
+	},
+	{
+		"name": "Marvel Scale",
+		"meta": "Ability",
+		"desc": "This Pokémon's AC increase by 2 when suffering from a negative status condition."
+	},
+	{
+		"name": "Minus",
+		"meta": "Ability",
+		"desc": "This Pokémon boosts its attack and damage rolls by 2 if an ally also has a Plus or Minus ability"
+	},
+	{
+		"name": "Mold Breaker",
+		"meta": "Ability",
+		"desc": "This Pokémon's moves ignore any abilities or moves that would lessen their effect  or ability to hit an opponent (Due to things like Water Absorb, Snow Cloak, Thick Fat, etc.)"
+	},
+	{
+		"name": "Moody",
+		"meta": "Ability",
+		"desc": "At the end of each long rest, this Pokémon rerolls on the nature table, replacing its nature with the result until the next long rest."
+	},
+	{
+		"name": "Motor Drive",
+		"meta": "Ability",
+		"desc": "When hit by an electric-type move, if not immune, this Pokémon's speed increases by 10 feet until the end of combat (up to a max of 50 additional feet)."
+	},
+	{
+		"name": "Moxie",
+		"meta": "Ability",
+		"desc": "Upon causing an opponent to faint, this Pokémon may immediately take another action."
+	},
+	{
+		"name": "Multiscale",
+		"meta": "Ability",
+		"desc": "If this Pokémon is at full health, the first attack that hits it deals half damage."
+	},
+	{
+		"name": "Multitype",
+		"meta": "Ability",
+		"desc": "This Pokémon's type and form change to match the type of Elemental Plate this Pokémon holds. The Plate cannot be effected by any item-removing ability or move."
+	},
+	{
+		"name": "Mummy",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a melee attack, one random ability of its attacker changes to Mummy until the remainder of the encounter."
+	},
+	{
+		"name": "Natural Cure",
+		"meta": "Ability",
+		"desc": "This Pokémon is cured of negative status ailments upon returning to its Pokeball."
+	},
+	{
+		"name": "No Guard",
+		"meta": "Ability",
+		"desc": "Any attack made by or against this Pokémon has advantage."
+	},
+	{
+		"name": "Normalize",
+		"meta": "Ability",
+		"desc": "Every move this Pokémon makes is Normal type."
+	},
+	{
+		"name": "Oblivious",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to moves that attempt to charm or taunt it."
+	},
+	{
+		"name": "Overcoat",
+		"meta": "Ability",
+		"desc": "This Pokémon does not take damage from weather-related moves like Hail, Weather Ball, etc."
+	},
+	{
+		"name": "Overgrow",
+		"meta": "Ability",
+		"desc": "When this Pokémon falls below 25% of its maximum HP, double the STAB damage for its grass-type moves."
+	},
+	{
+		"name": "Overheat",
+		"meta": "Ability",
+		"desc": "This Pokémon knows Overheat as a fifth move. The move is forgotten if it takes any other form."
+	},
+	{
+		"name": "Own Tempo",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to becoming confused."
+	},
+	{
+		"name": "Paper Thin",
+		"meta": "Ability",
+		"desc": "This Pokémon always has a maximum HP of 1."
+	},
+	{
+		"name": "Pickpocket",
+		"meta": "Ability",
+		"desc": "As a bonus action, this Pokémon can make a DEX check contested by the opponent’s WIS to attempt to steal a held item. After the first attempt, all other attempts against the same opponent are rolled at disadvantage."
+	},
+	{
+		"name": "Pickup",
+		"meta": "Ability",
+		"desc": "If an opponent uses a consumable held item in battle, this Pokémon gains a copy of it if it is not currently holding an item."
+	},
+	{
+		"name": "Plus",
+		"meta": "Ability",
+		"desc": "This Pokémon boosts its attack and damage rolls by 2 if an ally also has a Plus or Minus ability"
+	},
+	{
+		"name": "Poison Heal",
+		"meta": "Ability",
+		"desc": "If this Pokémon is poisoned, the amount of damage dealt by the poison heals the Pokémon instead."
+	},
+	{
+		"name": "Poison Point",
+		"meta": "Ability",
+		"desc": "On melee attacks made by this Pokémon, roll a d10 on a hit. On a result of a 10, the target is poisoned."
+	},
+	{
+		"name": "Poison Touch",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit with a melee attack, roll a 1d4. On a result of 4, the attacker takes an amount of poison damage equal to this Pokémon’s proficiency modifier."
+	},
+	{
+		"name": "Prankster",
+		"meta": "Ability",
+		"desc": "Once per short rest, this Pokémon can move to the top of initiative order in a single round, but must use a status-affecting move on its turn."
+	},
+	{
+		"name": "Pressure",
+		"meta": "Ability",
+		"desc": "Any move targeting this Pokémon directly costs an additional 1 PP."
+	},
+	{
+		"name": "Protean",
+		"meta": "Ability",
+		"desc": "This Pokémon's type changes to the type of move it uses, just before the move is used. It takes on the new type's resistances, vulnerabilities, and immunities."
+	},
+	{
+		"name": "Pure Power",
+		"meta": "Ability",
+		"desc": "Once per short rest, this Pokémon may double the damage it does on a single move that requires an attack roll. The player must announce that they are using this ability before the attack roll."
+	},
+	{
+		"name": "Quick Feet",
+		"meta": "Ability",
+		"desc": "When suffering from a negative status condition, this Pokémon’s speed increases by 15 ft."
+	},
+	{
+		"name": "Rain Dish",
+		"meta": "Ability",
+		"desc": "In rainy conditions, this Pokémon heals for an amount of HP equal to its proficiency bonus at the end of each of its turns."
+	},
+	{
+		"name": "Rattled",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a damaging Dark, Bug, or Ghost move, it makes its next attack at advantage."
+	},
+	{
+		"name": "Reckless",
+		"meta": "Ability",
+		"desc": "When attacking with moves with recoil damage, this Pokémon doubles its STAB bonus."
+	},
+	{
+		"name": "Regenerator",
+		"meta": "Ability",
+		"desc": "Once per long rest, this Pokémon regains hit points equal to its level when it returns to its Pokéball."
+	},
+	{
+		"name": "Rivalry",
+		"meta": "Ability",
+		"desc": "This Pokémon adds its proficiency bonus to damage when attacking a Pokémon of the same type."
+	},
+	{
+		"name": "Rock Head",
+		"meta": "Ability",
+		"desc": "This Pokémon takes no recoil damage."
+	},
+	{
+		"name": "Rough Skin",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a melee attack, it may roll a d4. On a 4, deal an amount of normal damage equal to its proficiency modifier to its attacker."
+	},
+	{
+		"name": "Run Away",
+		"meta": "Ability",
+		"desc": "While this Pokémon is active, the trainer automatically succeeds on their DEX roll to run away from a wild Pokémon encounter."
+	},
+	{
+		"name": "Sand Force",
+		"meta": "Ability",
+		"desc": "During a Sandstorm, this Pokémon can double its STAB when it hits an opponent."
+	},
+	{
+		"name": "Sand Rush",
+		"meta": "Ability",
+		"desc": "This Pokémon’s speed is doubled in desert terrain, or during a Sandstorm."
+	},
+	{
+		"name": "Sand Stream",
+		"meta": "Ability",
+		"desc": "A constant Sandstorm covers the battlefield when this Pokémon enters a battle. This Pokémon may use the move Sandstorm as a bonus action. In the case of another Pokémon with a similar weather ability, the tie goes to the Pokémon with the highest DEX score."
+	},
+	{
+		"name": "Sand Veil",
+		"meta": "Ability",
+		"desc": "This Pokémon’s AC increases by 2 in desert terrain, or during a Sandstorm."
+	},
+	{
+		"name": "Sap Sipper",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to grass-type moves. If hit by a grass type move, it takes no damage and instead absorbs the energy, granting advantage on its next attack."
+	},
+	{
+		"name": "Scrappy",
+		"meta": "Ability",
+		"desc": "This Pokémon's Normal and Fighting type moves hit Ghost type Pokémon."
+	},
+	{
+		"name": "Serene Grace",
+		"meta": "Ability",
+		"desc": "The DC to avoid a negative status condition from this Pokémon is increased by 1."
+	},
+	{
+		"name": "Shadow Tag",
+		"meta": "Ability",
+		"desc": "If this Pokémon is active, an opponent cannot flee or be switched out."
+	},
+	{
+		"name": "Shed Skin",
+		"meta": "Ability",
+		"desc": "If this Pokémon is affected by a negative status ailment, they can roll a d4 at the end of each of their turns. On a result of 4, they are cured."
+	},
+	{
+		"name": "Sheer Force",
+		"meta": "Ability",
+		"desc": "This Pokémon adds its proficiency bonus to damage rolls while poisoned, burned, confused, or paralyzed."
+	},
+	{
+		"name": "Shell Armor",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to extra damage dealt by a Critical Hit."
+	},
+	{
+		"name": "Shield Dust",
+		"meta": "Ability",
+		"desc": "Once per long rest, this Pokémon can ignore a negative status condition that results from an enemy move."
+	},
+	{
+		"name": "Simple",
+		"meta": "Ability",
+		"desc": "Once per short rest, you may double this Pokémon's Move modifier for a single attack or damage roll."
+	},
+	{
+		"name": "Skill Link",
+		"meta": "Ability",
+		"desc": "On combo moves like Fury Swipes, Comet Punch, etc., this Pokémon is guaranteed to hit at least twice."
+	},
+	{
+		"name": "Slow Start",
+		"meta": "Ability",
+		"desc": "This Pokémon's speed is halved and its attacks are made at disadvantage for the first two rounds of every combat."
+	},
+	{
+		"name": "Slush Rush",
+		"meta": "Ability",
+		"desc": "This Pokémon’s speed is doubled in arctic conditions, or during a hailstorm."
+	},
+	{
+		"name": "Sniper",
+		"meta": "Ability",
+		"desc": "On a critical hit made by this Pokémon, triple the dice roll instead of doubling it."
+	},
+	{
+		"name": "Snow Cloak",
+		"meta": "Ability",
+		"desc": "This Pokémon's AC is increased by 2 in arctic conditions, or when it is snowing or hailing."
+	},
+	{
+		"name": "Snow Warning",
+		"meta": "Ability",
+		"desc": "When this Pokémon enters an outside battle, the weather immediately changes to hail. In the case of another Pokémon with a similar weather ability, the tie goes to the Pokémon with the highest DEX score."
+	},
+	{
+		"name": "Solar Power",
+		"meta": "Ability",
+		"desc": "Damage rolls for this Pokémon get an additional +2 during bright sunlight."
+	},
+	{
+		"name": "Solid Rock",
+		"meta": "Ability",
+		"desc": "This Pokémon does not take any additional damage from a critical hit."
+	},
+	{
+		"name": "Soundproof",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to sound-based moves."
+	},
+	{
+		"name": "Speed Boost",
+		"meta": "Ability",
+		"desc": "While this Pokémon is active and in an environment related to its type (DM Discretion), its trainer gets advantage on initiative rolls."
+	},
+	{
+		"name": "Stall",
+		"meta": "Ability",
+		"desc": "This Pokémon is always last in initiative order."
+	},
+	{
+		"name": "Static",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a melee attack, roll a d4. On a result of 4, the attacker takes an amount of electric damage equal to this Pokemon's proficiency bonus."
+	},
+	{
+		"name": "Steadfast",
+		"meta": "Ability",
+		"desc": "Once per long rest, when this Pokémon fails a saving throw against a negative status condition, it can choose to pass instead."
+	},
+	{
+		"name": "Stench",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a melee attack, roll a d10. On a 10, the attacker flinches."
+	},
+	{
+		"name": "Sticky Hold",
+		"meta": "Ability",
+		"desc": "Held items cannot be stolen or knocked away from this Pokémon."
+	},
+	{
+		"name": "Stone Veil",
+		"meta": "Ability",
+		"desc": "This Pokémon's AC is increased by 2 in rocky terrain, or during a Sandstorm."
+	},
+	{
+		"name": "Storm Drain",
+		"meta": "Ability",
+		"desc": "If an ally within 30 feet is attacked with a water type move, this Pokémon can use a reaction to choose to redirect that attack to themselves instead, gaining an amount of HP equal to half the damage dealt. This does not work on area of effect moves."
+	},
+	{
+		"name": "Sturdy",
+		"meta": "Ability",
+		"desc": "When this Pokémon takes an amount of damage from a single hit that is equal or greater than half the Pokémon's maximum HP, the damage is halved."
+	},
+	{
+		"name": "Suction Cups",
+		"meta": "Ability",
+		"desc": "This Pokémon cannot be forced out of battle by an opponent’s moves."
+	},
+	{
+		"name": "Super Luck",
+		"meta": "Ability",
+		"desc": "This Pokémon increases its critical hit range by 1 (20 to 19+, etc.)"
+	},
+	{
+		"name": "Swarm",
+		"meta": "Ability",
+		"desc": "This Pokémon adds doubles its STAB bonus when it has 25% or less of its maximum health."
+	},
+	{
+		"name": "Swift Swim",
+		"meta": "Ability",
+		"desc": "This Pokémon's swim speed is doubled in rainy conditions."
+	},
+	{
+		"name": "Synchronize",
+		"meta": "Ability",
+		"desc": "If this Pokémon becomes burned, paralyzed, or poisoned, its attacker receives the negative status condition as well (if not immune)."
+	},
+	{
+		"name": "Tangled Feet",
+		"meta": "Ability",
+		"desc": "Attacks against this Pokémon have disadvantage when it is confused."
+	},
+	{
+		"name": "Technician",
+		"meta": "Ability",
+		"desc": "For damaging moves activated by this Pokémon with 15 max PP or more, they may roll the damage twice and use the higher result."
+	},
+	{
+		"name": "Telepathy",
+		"meta": "Ability",
+		"desc": "This Pokémon cannot be damaged by its allies' attacks."
+	},
+	{
+		"name": "Teravolt",
+		"meta": "Ability",
+		"desc": "This Pokémon’s moves completely ignore any ability that would hinder or prevent their effect on the target or the user's ability to hit the target."
+	},
+	{
+		"name": "Thick Fat",
+		"meta": "Ability",
+		"desc": "This Pokémon takes quarter damage from Fire and Ice type moves."
+	},
+	{
+		"name": "Tinted Lens",
+		"meta": "Ability",
+		"desc": "This Pokémon’s moves ignore resistances."
+	},
+	{
+		"name": "Torrent",
+		"meta": "Ability",
+		"desc": "When this Pokémon falls below 25% of its health, double the STAB damage for its water-type moves."
+	},
+	{
+		"name": "Toxic Boost",
+		"meta": "Ability",
+		"desc": "When this Pokémon is hit by a poison-type attack, its next attack is rolled at advantage."
+	},
+	{
+		"name": "Trace",
+		"meta": "Ability",
+		"desc": "This Pokémon copies a random ability of an opponent when entering battle. The ability cannot be Flower Gift, Forecast, Illusion, Imposter, Multitype, Trace, Wonder Guard, or Zen Mode."
+	},
+	{
+		"name": "Transformer",
+		"meta": "Ability",
+		"desc": "This Pokémon has a standard Normal form from which all stats are based, but may change forms as a bonus action to drastically change its abilities. The forms it can take are Attack, Defense, and Speed. \n- In Attack form, it adds an additional +5 to its attack rolls, but all attacks against it has advantage.\n- In Defense form, its AC increases by 3, but its attacks are rolled at disadvantage. If the activated move requires a save, the target(s) have advantage.\n- In Speed form, it gains an additional attack action each turn, but the attack is done at disadvantage. If it is a move that requires a save, the target(s) have advantage."
+	},
+	{
+		"name": "Truant",
+		"meta": "Ability",
+		"desc": "This Pokémon cannot use the same move in back to back rounds."
+	},
+	{
+		"name": "Turboblaze",
+		"meta": "Ability",
+		"desc": "This Pokémon’s moves completely ignore any ability that would hinder or prevent their effect on the target or the user's ability to hit the target."
+	},
+	{
+		"name": "Unaware",
+		"meta": "Ability",
+		"desc": "When this Pokémon attacks an opponent, it ignores any stat boosts the opponent has been affected with since the start of battle. This includes boosts to AC or saving throws the Pokémon has to make."
+	},
+	{
+		"name": "Unburden",
+		"meta": "Ability",
+		"desc": "While this Pokémon is active and not holding an item, its trainer gets advantage on initiative rolls."
+	},
+	{
+		"name": "Unnerve",
+		"meta": "Ability",
+		"desc": "Opponents in combat with this Pokémon cannot eat held berries."
+	},
+	{
+		"name": "Victory Star",
+		"meta": "Ability",
+		"desc": "While this Pokémon is in battle, all allied Pokémon add an additional +1 to their attack rolls."
+	},
+	{
+		"name": "Vital Spirit",
+		"meta": "Ability",
+		"desc": "This Pokémon cannot be put to sleep."
+	},
+	{
+		"name": "Volt Absorb",
+		"meta": "Ability",
+		"desc": "Electric type moves do not damage this Pokémon. Instead, half of any electric damage done is absorbed, restoring the Pokémon's HP."
+	},
+	{
+		"name": "Water Absorb",
+		"meta": "Ability",
+		"desc": "Water type moves do not damage this Pokémon. Instead, half of any water damage done is absorbed, restoring the Pokémon's HP."
+	},
+	{
+		"name": "Water Veil",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to burning."
+	},
+	{
+		"name": "Water Weight",
+		"meta": "Ability",
+		"desc": "Once per short rest, this Pokémon gains temporary hit points equal to its level when battling in coastal and swampy areas, or in rainy conditions."
+	},
+	{
+		"name": "Weak Armor",
+		"meta": "Ability",
+		"desc": "When an attack hits this Pokémon, its speed increases by 5 feet, but its AC is temporarily reduced by 1 until the end of battle (for a maximum reduction of -5)."
+	},
+	{
+		"name": "White Smoke",
+		"meta": "Ability",
+		"desc": "Other Pokémon's moves or abilities cannot lower this Pokémon stats."
+	},
+	{
+		"name": "Wonder Guard",
+		"meta": "Ability",
+		"desc": "This Pokémon is immune to damaging attacks from types that are not in its vulnerabilities list."
+	},
+	{
+		"name": "Wonder Skin",
+		"meta": "Ability",
+		"desc": "This Pokémon has advantage on all saving throws related to being burned, frozen, poisoned, or paralyzed."
+	},
+	{
+		"name": "Zen Mode",
+		"meta": "Ability",
+		"desc": "When Darmanitan is below 50% of its HP, it enters Zen Mode. In Zen Mode, Darmanitan changes into the form of a solid statue. It's type changes to Fire/Psychic, it gains +4 to its AC, and its STR and WIS ability scores are swapped."
+	}
+]
