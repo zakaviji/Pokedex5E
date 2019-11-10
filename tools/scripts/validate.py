@@ -83,7 +83,8 @@ def evolve():
             total = data["total_stages"]
             if current == total:
                 if "into" in data:
-                    print(species)
+                    # print(species)
+                    pass
 
 
 def pokedex_order():
@@ -93,9 +94,9 @@ def pokedex_order():
         pokemon_data = json.load(f)
         for species, data in pokemon_data.items():
             if data["index"] not in indexes:
-                indexes.append(data["index"])
+                indexes.append(str(data["index"]))
                 order.append(species)
-    return order
+    return indexes
 
 
 def habitat():
@@ -111,6 +112,7 @@ def habitat():
 
 
 def pokedex_extra():
+    print("Pokedex Extra")
     with open(pokedex_extra_json, "r", encoding="utf8") as fp:
         pokedex_extra_data = json.load(fp)
 
@@ -118,10 +120,11 @@ def pokedex_extra():
             try:
                 pokedex_extra_data[species]
             except:
-                print("Can't find", species)
+                print("  Can't find", species)
 
 
 def moves():
+    print("Moves")
     with open(pokemons_json, "r") as fp:
         with open(moves_json, "r") as f:
             move_data = json.load(f)
@@ -130,25 +133,27 @@ def moves():
             for pokemon, data in pokemon_data.items():
                 for move in data["Moves"]["Starting Moves"]:
                     if move not in move_data:
-                        print(pokemon, "Starting move: ", move, "Invalid")
-                for level, moves in data["Moves"]["Level"].items():
-                    for move in moves:
+                        print(" ", pokemon, "Starting move: ", move, "Invalid")
+                for level, _moves in data["Moves"]["Level"].items():
+                    for move in _moves:
                         if move not in move_data:
-                            print(pokemon, "Level", level, "move: ", move, "Invalid")
+                            print(" ", pokemon, "Level", level, "move: ", move, "Invalid")
 
 
 def tm():
+    print("TMs")
     with open(tm_json, "r") as fp:
         with open(moves_json, "r") as f:
             move_data = json.load(f)
             tm_data = json.load(fp)
 
             for num, move in tm_data.items():
-                if not move in move_data:
-                    print("Can't find TM: ", num, move)
+                if move not in move_data:
+                    print("  Can't find TM: ", num, move)
 
 
 def abilities():
+    print("Abilities")
     with open(pokemons_json, "r") as fp:
         with open(abilities_json, "r") as f:
             ability_data = json.load(f)
@@ -156,20 +161,21 @@ def abilities():
 
             for _, data in pokemon_data.items():
                 for ability in data["Abilities"]:
-                    if not ability in ability_data:
-                        print("Can't find ability ", ability)
+                    if ability not in ability_data:
+                        print("  Can't find ability ", ability)
                 if "Hidden Ability" in data and data["Hidden Ability"] not in ability_data:
-                    print("Can't find hidden ability ", data["Hidden Ability"])
+                    print("  Can't find hidden ability ", data["Hidden Ability"])
 
 
 def images():
+    print("Images")
     with open(pokemons_json, "r") as fp:
         pokemon_data = json.load(fp)
         for p, data in pokemon_data.items():
             for x in ["pokemons", "sprites"]:
                 file_path = images_path / x / "{}{}.png".format(data["index"], p)
                 if not os.path.exists(file_path):
-                    print("Can't find image: ", "{}{}.png".format(data["index"], p), "in", x)
+                    print("  Can't find image: ", "{}{}.png".format(data["index"], p), "in", x)
 
 
 def long_vulnerabilities():
@@ -184,5 +190,12 @@ def long_vulnerabilities():
     print(length)
 
 
+def tests():
+    evolve()
+    pokedex_extra()
+    moves()
+    tm()
+    abilities()
+    images()
 
-long_vulnerabilities()
+tests()

@@ -1,4 +1,331 @@
 images {
+  image: "/assets/textures/pokemons/649Genesect.png"
+}
+images {
+  image: "/assets/textures/pokemons/64Kadabra.png"
+}
+images {
+  image: "/assets/textures/pokemons/650Chespin.png"
+}
+images {
+  image: "/assets/textures/pokemons/651Quilladin.png"
+}
+images {
+  image: "/assets/textures/pokemons/652Chesnaught.png"
+}
+images {
+  image: "/assets/textures/pokemons/653Fennekin.png"
+}
+images {
+  image: "/assets/textures/pokemons/654Braixen.png"
+}
+images {
+  image: "/assets/textures/pokemons/655Delphox.png"
+}
+images {
+  image: "/assets/textures/pokemons/656Froakie.png"
+}
+images {
+  image: "/assets/textures/pokemons/657Frogadier.png"
+}
+images {
+  image: "/assets/textures/pokemons/658Greninja.png"
+}
+images {
+  image: "/assets/textures/pokemons/659Bunnelby.png"
+}
+images {
+  image: "/assets/textures/pokemons/65Alakazam.png"
+}
+images {
+  image: "/assets/textures/pokemons/660Diggersby.png"
+}
+images {
+  image: "/assets/textures/pokemons/661Fletchling.png"
+}
+images {
+  image: "/assets/textures/pokemons/662Fletchinder.png"
+}
+images {
+  image: "/assets/textures/pokemons/663Talonflame.png"
+}
+images {
+  image: "/assets/textures/pokemons/664Scatterbug.png"
+}
+images {
+  image: "/assets/textures/pokemons/665Spewpa.png"
+}
+images {
+  image: "/assets/textures/pokemons/666Vivillon.png"
+}
+images {
+  image: "/assets/textures/pokemons/667Litleo.png"
+}
+images {
+  image: "/assets/textures/pokemons/668Pyroar.png"
+}
+images {
+  image: "/assets/textures/pokemons/66Machop.png"
+}
+images {
+  image: "/assets/textures/pokemons/670Floette.png"
+}
+images {
+  image: "/assets/textures/pokemons/671Florges.png"
+}
+images {
+  image: "/assets/textures/pokemons/672Skiddo.png"
+}
+images {
+  image: "/assets/textures/pokemons/673Gogoat.png"
+}
+images {
+  image: "/assets/textures/pokemons/674Pancham.png"
+}
+images {
+  image: "/assets/textures/pokemons/675Pangoro.png"
+}
+images {
+  image: "/assets/textures/pokemons/676Furfrou.png"
+}
+images {
+  image: "/assets/textures/pokemons/677Espurr.png"
+}
+images {
+  image: "/assets/textures/pokemons/679Honedge.png"
+}
+images {
+  image: "/assets/textures/pokemons/67Machoke.png"
+}
+images {
+  image: "/assets/textures/pokemons/680Doublade.png"
+}
+images {
+  image: "/assets/textures/pokemons/681Aegislash.png"
+}
+images {
+  image: "/assets/textures/pokemons/682Spritzee.png"
+}
+images {
+  image: "/assets/textures/pokemons/683Aromatisse.png"
+}
+images {
+  image: "/assets/textures/pokemons/684Swirlix.png"
+}
+images {
+  image: "/assets/textures/pokemons/685Slurpuff.png"
+}
+images {
+  image: "/assets/textures/pokemons/686Inkay.png"
+}
+images {
+  image: "/assets/textures/pokemons/687Malamar.png"
+}
+images {
+  image: "/assets/textures/pokemons/688Binacle.png"
+}
+images {
+  image: "/assets/textures/pokemons/689Barbaracle.png"
+}
+images {
+  image: "/assets/textures/pokemons/68Machamp.png"
+}
+images {
+  image: "/assets/textures/pokemons/690Skrelp.png"
+}
+images {
+  image: "/assets/textures/pokemons/691Dragalge.png"
+}
+images {
+  image: "/assets/textures/pokemons/692Clauncher.png"
+}
+images {
+  image: "/assets/textures/pokemons/693Clawitzer.png"
+}
+images {
+  image: "/assets/textures/pokemons/694Helioptile.png"
+}
+images {
+  image: "/assets/textures/pokemons/695Heliolisk.png"
+}
+images {
+  image: "/assets/textures/pokemons/696Tyrunt.png"
+}
+images {
+  image: "/assets/textures/pokemons/697Tyrantrum.png"
+}
+images {
+  image: "/assets/textures/pokemons/698Amaura.png"
+}
+images {
+  image: "/assets/textures/pokemons/699Aurorus.png"
+}
+images {
+  image: "/assets/textures/pokemons/69Bellsprout.png"
+}
+images {
+  image: "/assets/textures/pokemons/6Charizard.png"
+}
+images {
+  image: "/assets/textures/pokemons/700Sylveon.png"
+}
+images {
+  image: "/assets/textures/pokemons/701Hawlucha.png"
+}
+images {
+  image: "/assets/textures/pokemons/702Dedenne.png"
+}
+images {
+  image: "/assets/textures/pokemons/703Carbink.png"
+}
+images {
+  image: "/assets/textures/pokemons/704Goomy.png"
+}
+images {
+  image: "/assets/textures/pokemons/705Sliggoo.png"
+}
+images {
+  image: "/assets/textures/pokemons/706Goodra.png"
+}
+images {
+  image: "/assets/textures/pokemons/707Klefki.png"
+}
+images {
+  image: "/assets/textures/pokemons/708Phantump.png"
+}
+images {
+  image: "/assets/textures/pokemons/709Trevenant.png"
+}
+images {
+  image: "/assets/textures/pokemons/70Weepinbell.png"
+}
+images {
+  image: "/assets/textures/pokemons/710Pumpkaboo.png"
+}
+images {
+  image: "/assets/textures/pokemons/711Gourgeist.png"
+}
+images {
+  image: "/assets/textures/pokemons/712Bergmite.png"
+}
+images {
+  image: "/assets/textures/pokemons/713Avalugg.png"
+}
+images {
+  image: "/assets/textures/pokemons/714Noibat.png"
+}
+images {
+  image: "/assets/textures/pokemons/715Noivern.png"
+}
+images {
+  image: "/assets/textures/pokemons/716Xerneas.png"
+}
+images {
+  image: "/assets/textures/pokemons/717Yveltal.png"
+}
+images {
+  image: "/assets/textures/pokemons/719Diancie.png"
+}
+images {
+  image: "/assets/textures/pokemons/71Victreebel.png"
+}
+images {
+  image: "/assets/textures/pokemons/721Volcanion.png"
+}
+images {
+  image: "/assets/textures/pokemons/72Tentacool.png"
+}
+images {
+  image: "/assets/textures/pokemons/73Tentacruel.png"
+}
+images {
+  image: "/assets/textures/pokemons/74Geodude.png"
+}
+images {
+  image: "/assets/textures/pokemons/75Graveler.png"
+}
+images {
+  image: "/assets/textures/pokemons/76Golem.png"
+}
+images {
+  image: "/assets/textures/pokemons/77Ponyta.png"
+}
+images {
+  image: "/assets/textures/pokemons/78Rapidash.png"
+}
+images {
+  image: "/assets/textures/pokemons/79Slowpoke.png"
+}
+images {
+  image: "/assets/textures/pokemons/7Squirtle.png"
+}
+images {
+  image: "/assets/textures/pokemons/80Slowbro.png"
+}
+images {
+  image: "/assets/textures/pokemons/81Magnemite.png"
+}
+images {
+  image: "/assets/textures/pokemons/82Magneton.png"
+}
+images {
+  image: "/assets/textures/pokemons/83Farfetch\'d.png"
+}
+images {
+  image: "/assets/textures/pokemons/84Doduo.png"
+}
+images {
+  image: "/assets/textures/pokemons/85Dodrio.png"
+}
+images {
+  image: "/assets/textures/pokemons/86Seel.png"
+}
+images {
+  image: "/assets/textures/pokemons/87Dewgong.png"
+}
+images {
+  image: "/assets/textures/pokemons/88Grimer.png"
+}
+images {
+  image: "/assets/textures/pokemons/89Muk.png"
+}
+images {
+  image: "/assets/textures/pokemons/8Wartortle.png"
+}
+images {
+  image: "/assets/textures/pokemons/90Shellder.png"
+}
+images {
+  image: "/assets/textures/pokemons/91Cloyster.png"
+}
+images {
+  image: "/assets/textures/pokemons/92Gastly.png"
+}
+images {
+  image: "/assets/textures/pokemons/93Haunter.png"
+}
+images {
+  image: "/assets/textures/pokemons/94Gengar.png"
+}
+images {
+  image: "/assets/textures/pokemons/95Onix.png"
+}
+images {
+  image: "/assets/textures/pokemons/96Drowzee.png"
+}
+images {
+  image: "/assets/textures/pokemons/97Hypno.png"
+}
+images {
+  image: "/assets/textures/pokemons/98Krabby.png"
+}
+images {
+  image: "/assets/textures/pokemons/99Kingler.png"
+}
+images {
+  image: "/assets/textures/pokemons/9Blastoise.png"
+}
+images {
   image: "/assets/textures/pokemons/-1MissingNo.png"
 }
 images {
@@ -842,13 +1169,13 @@ images {
   image: "/assets/textures/pokemons/350Milotic.png"
 }
 images {
-  image: "/assets/textures/pokemons/351Castform Rainy.png"
+  image: "/assets/textures/pokemons/351Rainy Castform.png"
 }
 images {
-  image: "/assets/textures/pokemons/351Castform Snowy.png"
+  image: "/assets/textures/pokemons/351Snowy Castform.png"
 }
 images {
-  image: "/assets/textures/pokemons/351Castform Sunny.png"
+  image: "/assets/textures/pokemons/351Sunny Castform.png"
 }
 images {
   image: "/assets/textures/pokemons/351Castform.png"
@@ -1877,130 +2204,31 @@ images {
   image: "/assets/textures/pokemons/648Meloetta - Pirouette.png"
 }
 images {
-  image: "/assets/textures/pokemons/649Genesect.png"
-}
-images {
-  image: "/assets/textures/pokemons/64Kadabra.png"
-}
-images {
-  image: "/assets/textures/pokemons/65Alakazam.png"
-}
-images {
-  image: "/assets/textures/pokemons/66Machop.png"
-}
-images {
-  image: "/assets/textures/pokemons/67Machoke.png"
-}
-images {
-  image: "/assets/textures/pokemons/68Machamp.png"
-}
-images {
-  image: "/assets/textures/pokemons/69Bellsprout.png"
-}
-images {
-  image: "/assets/textures/pokemons/6Charizard.png"
-}
-images {
-  image: "/assets/textures/pokemons/70Weepinbell.png"
-}
-images {
-  image: "/assets/textures/pokemons/71Victreebel.png"
-}
-images {
-  image: "/assets/textures/pokemons/72Tentacool.png"
-}
-images {
-  image: "/assets/textures/pokemons/73Tentacruel.png"
-}
-images {
-  image: "/assets/textures/pokemons/74Geodude.png"
-}
-images {
-  image: "/assets/textures/pokemons/75Graveler.png"
-}
-images {
-  image: "/assets/textures/pokemons/76Golem.png"
-}
-images {
-  image: "/assets/textures/pokemons/77Ponyta.png"
-}
-images {
-  image: "/assets/textures/pokemons/78Rapidash.png"
-}
-images {
-  image: "/assets/textures/pokemons/79Slowpoke.png"
-}
-images {
-  image: "/assets/textures/pokemons/7Squirtle.png"
-}
-images {
-  image: "/assets/textures/pokemons/80Slowbro.png"
-}
-images {
-  image: "/assets/textures/pokemons/81Magnemite.png"
-}
-images {
-  image: "/assets/textures/pokemons/82Magneton.png"
-}
-images {
-  image: "/assets/textures/pokemons/83Farfetch\'d.png"
-}
-images {
-  image: "/assets/textures/pokemons/84Doduo.png"
-}
-images {
-  image: "/assets/textures/pokemons/85Dodrio.png"
-}
-images {
-  image: "/assets/textures/pokemons/86Seel.png"
-}
-images {
-  image: "/assets/textures/pokemons/87Dewgong.png"
-}
-images {
-  image: "/assets/textures/pokemons/88Grimer.png"
-}
-images {
-  image: "/assets/textures/pokemons/89Muk.png"
-}
-images {
-  image: "/assets/textures/pokemons/8Wartortle.png"
-}
-images {
-  image: "/assets/textures/pokemons/90Shellder.png"
-}
-images {
-  image: "/assets/textures/pokemons/91Cloyster.png"
-}
-images {
-  image: "/assets/textures/pokemons/92Gastly.png"
-}
-images {
-  image: "/assets/textures/pokemons/93Haunter.png"
-}
-images {
-  image: "/assets/textures/pokemons/94Gengar.png"
-}
-images {
-  image: "/assets/textures/pokemons/95Onix.png"
-}
-images {
-  image: "/assets/textures/pokemons/96Drowzee.png"
-}
-images {
-  image: "/assets/textures/pokemons/97Hypno.png"
-}
-images {
-  image: "/assets/textures/pokemons/98Krabby.png"
-}
-images {
-  image: "/assets/textures/pokemons/99Kingler.png"
-}
-images {
-  image: "/assets/textures/pokemons/9Blastoise.png"
-}
-images {
   image: "/assets/textures/pokemons/-2Pokeball.png"
+}
+images {
+  image: "/assets/textures/pokemons/669Flab\303\251b\303\251.png"
+}
+images {
+  image: "/assets/textures/pokemons/678MeowsticF.png"
+}
+images {
+  image: "/assets/textures/pokemons/678MeowsticM.png"
+}
+images {
+  image: "/assets/textures/pokemons/718Zygarde 10% Forme.png"
+}
+images {
+  image: "/assets/textures/pokemons/718Zygarde 50% Forme.png"
+}
+images {
+  image: "/assets/textures/pokemons/718Zygarde Complete Form.png"
+}
+images {
+  image: "/assets/textures/pokemons/720Hoopa Confined.png"
+}
+images {
+  image: "/assets/textures/pokemons/720Hoopa Unbound.png"
 }
 margin: 0
 extrude_borders: 1

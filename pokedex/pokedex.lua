@@ -163,6 +163,13 @@ function M.get_sprite(pokemon)
 		pokemon_sprite = pokemon_sprite:sub(1, -5)
 	elseif pokemon_index == 493 then
 		return "493Arceus", "pokemon0"
+	elseif pokemon_index == 678 then
+		if pokemon:sub(-#"♂") == "♂" then 
+			gender = "M"
+		else
+			gender = "F"
+		end
+		return "678Meowstic" .. gender, "pokemon0"
 	end
 
 	local data = M.get_pokemon(pokemon)
