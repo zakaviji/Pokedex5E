@@ -41,7 +41,7 @@ def convert_moves():
 
             move_export_json["list"].append(move_entry)
         with open(output / "avrae_moves.json", "w") as fp:
-            json.dump(move_export_json, fp, indent="  ", ensure_ascii=False)
+            json.dump(move_export_json["list"], fp, indent="  ", ensure_ascii=False)
 
 
 def convert_extras():
@@ -62,7 +62,7 @@ def convert_extras():
             ability_export_json["list"].append(entry)
 
         with open(output / "avrae_abilities.json", "w") as fp:
-            json.dump(ability_export_json, fp, indent="  ", ensure_ascii=False)
+            json.dump(ability_export_json["list"], fp, indent="  ", ensure_ascii=False)
 
 
 convert_moves()
