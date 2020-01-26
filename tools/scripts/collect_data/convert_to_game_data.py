@@ -80,7 +80,7 @@ def convert_pokemon_data(input_file):
                     lvl_moves = reg_level_moves.findall(value)
                     if lvl_moves:
                         for level, moves in lvl_moves:
-                            output_pokemon_data[pokemon]["Moves"]["Level"][level] = [x for x in moves.split(", ").replace(",", "") if x]
+                            output_pokemon_data[pokemon]["Moves"]["Level"][level] = [x.replace(",", "") for x in moves.split(", ") if x.replace(",", "")]
                     tm_moves = reg_tm_moves.search(value)
                     if tm_moves:
                         if "EVERY TM" in value:
@@ -167,7 +167,7 @@ def convert_pokemon_data(input_file):
 
 def convert_move_data(input_file):
     convert_to_int = ["PP"]
-    ignore = ["Higher Levels"]
+    ignore = []
     reg_damage_level = re.compile("Dmg lvl (\d+)")
     reg_damage_dice = re.compile("(?i)(?:(\d)x|X|)(\d+|)d(\d+)\s*(\+\s*move|)(?:\+\s*(\d)|)(\+\s*level|)")
     healing = re.compile(r"((?:re|\b)gain.\b.*hit points)")
@@ -180,6 +180,7 @@ def convert_move_data(input_file):
         for move, data in file_data.items():
             converted[move] = {}
             is_healing_move = False
+            scaling_damage = {}
             for attribute, value in data.items():
                 if not value or value == "None" or attribute in ignore:
                     continue
@@ -194,6 +195,15 @@ def convert_move_data(input_file):
                     level = reg_damage_level.search(attribute).group(1)
                     damage = reg_damage_dice.search(value)
                     if damage:
+                        scaling_damage[attribute] = value
+                        if len(scaling_damage) == 4:
+                            extra_damage = "Higher Levels: The dice roll for this move changes to {} at level 5," \
+                                           " {} at level 10, and {} at level 17.".format(
+                                            scaling_damage["Dmg lvl 5"],
+                                            scaling_damage["Dmg lvl 5"],
+                                            scaling_damage["Dmg lvl 5"])
+                            converted[move]["scaling"] = extra_damage
+
                         amount = damage.group(2)
                         amount = 0 if amount == "" else amount
                         dice_max = damage.group(3)

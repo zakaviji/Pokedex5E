@@ -26,8 +26,8 @@ def convert_moves():
             if move == "Error":
                 continue
 
-            if "Higher Levels" in data:
-                desc = "{desc}\n\n**Higher Levels:** {higher_levels}".format(desc=data["Description"], higher_levels=data["Higher Levels"].replace("Higher Levels: ", ""))
+            if "scaling" in data:
+                desc = "{desc}\n\n**Higher Levels:** {higher_levels}".format(desc=data["Description"], higher_levels=data["scaling"].replace("Higher Levels: ", ""))
             else:
                 desc = data["Description"]
             move_entry["desc"] = desc
