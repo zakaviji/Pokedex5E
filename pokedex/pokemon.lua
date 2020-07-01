@@ -358,9 +358,24 @@ function M.get_max_hp_forced(pokemon)
 	return pokemon.hp.edited
 end
 
-
 function M.get_max_hp(pokemon)
 	return pokemon.hp.max
+end
+
+function M.set_current_pp(pokemon, pp)
+	pokemon.pp.current = pp
+end
+
+function M.get_current_pp(pokemon)
+	return pokemon.pp.current
+end
+
+function M.set_max_pp(pokemon, pp)
+	pokemon.pp.max = pp
+end
+
+function M.get_max_pp(pokemon)
+	return pokemon.pp.max
 end
 
 function M.get_defaut_max_hp(pokemon)
@@ -557,23 +572,23 @@ function M.get_skills(pokemon)
 end
 
 function M.get_move_pp(pokemon, move)
-	-- If the move somehow became nil (which can happen in corrupted data cases due to issue https://github.com/Jerakin/Pokedex5E/issues/407),
-	-- reset it to the move's base pp to avoid exceptions in other places. Ideally the corruption would never happen in the first place, but
-	-- some save data is already corrupt.
-	local pp = pokemon.moves[move].pp
-	if pp == nil then
-		M.reset_move_pp(pokemon, move)
-		pp = pokemon.moves[move].pp
+	return pokemon.moves[move].pp
+end
+
+function M.get_move_pp_cost(pokemon, move)
+	local move_pp = movedex.get_move_pp(move)
+	if type(move_pp) == "string" then
+		return 99
 	end
-	return pp
+	local pp_cost = math.floor(15 / math.max(1, move_pp)) -- converted pp cost = floor(15 / move max pp)
+	return pp_cost
 end
 
 function M.get_move_pp_max(pokemon, move)
 	local _, pp_extra = M.have_feat(pokemon, "Tireless")
 	local move_pp = movedex.get_move_pp(move)
 	if type(move_pp) == "string" then
-		-- probably move with Unlimited uses, i.e. Struggle
-		return move_pp
+		return 99
 	end
 	return movedex.get_move_pp(move) + pp_extra
 end
@@ -584,6 +599,7 @@ end
 
 function M.reset(pokemon)
 	M.set_current_hp(pokemon, M.get_total_max_hp(pokemon))
+	M.set_current_pp(pokemon, M.get_max_pp(pokemon))
 	for name, move in pairs(M.get_moves(pokemon)) do
 		M.reset_move_pp(pokemon, name)
 	end
@@ -945,6 +961,10 @@ function M.new(data)
 	this.hp.max = pokedex.get_base_hp(data.species)
 	this.hp.current = pokedex.get_base_hp(data.species) + this.level.current * math.floor((M.get_attributes(this).CON - 10) / 2)
 	this.hp.edited = false
+
+	this.pp = {}
+	this.pp.max = pokedex.get_pp_for_level(this.level.current)
+	this.pp.current = this.pp.max
 
 	this.moves = get_starting_moves(this, data.number_of_moves)
 	

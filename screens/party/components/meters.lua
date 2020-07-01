@@ -10,6 +10,7 @@ local M = {}
 local active_buttons = {}
 local active_pokemon_id
 local active_nodes 
+
 local function update_hp_meter(nodes, max, current)
 	local max_size = gui.get_size(nodes["pokemon/hp_bar_bg"])
 	local percent = current/max
@@ -19,10 +20,23 @@ local function update_hp_meter(nodes, max, current)
 	gui.set_size(nodes["pokemon/hp_bar_bg1"], size)
 end
 
+local function update_pp_meter(nodes, max, current)
+	local max_size = gui.get_size(nodes["pokemon/pp_bar_bg"])
+	local percent = current/max
+	local size = gui.get_size(nodes["pokemon/pp_bar_bg1"])
+
+	size.x = math.max(math.min(percent * max_size.x, max_size.x), 0)
+	gui.set_size(nodes["pokemon/pp_bar_bg1"], size)
+end
 
 function M.add_hp(id, hp)
 	local current = storage.get_pokemon_current_hp(id)
 	storage.set_pokemon_current_hp(id, current + hp)
+end
+
+function M.add_pp(id, pp)
+	local current = storage.get_pokemon_current_pp(id)
+	storage.set_pokemon_current_pp(id, current + pp)
 end
 
 function M.add_loyalty(id, loyalty)
@@ -51,6 +65,33 @@ local function add_hp_buttons(nodes, pokemon)
 		M.add_hp(pokemon_id, -1)
 		information.refresh(pokemon_id)
 		M.setup_hp(nodes, pokemon_id) end, refresh=gooey_buttons.minus_button
+
+	}
+	table.insert(active_buttons, plus)
+	table.insert(active_buttons, minus)
+end
+
+local function add_pp_buttons(nodes, pokemon)
+	local id = party_utils.set_id(nodes["pokemon/pp/btn_plus"])
+	local plus = {node=id, func=function()
+		gameanalytics.addDesignEvent {
+			eventId = "Party:PP:Increase"
+		}
+		local pokemon_id = _pokemon.get_id(pokemon)
+		M.add_pp(pokemon_id, 1)
+		information.refresh(pokemon_id)
+		M.setup_pp(nodes, pokemon_id) end, refresh=gooey_buttons.plus_button
+	}
+	local id = party_utils.set_id(nodes["pokemon/pp/btn_minus"])
+
+	local minus = {node=id, func=function()
+		gameanalytics.addDesignEvent {
+			eventId = "Party:PP:Decreae"
+		}
+		local pokemon_id = _pokemon.get_id(pokemon)
+		M.add_pp(pokemon_id, -1)
+		information.refresh(pokemon_id)
+		M.setup_pp(nodes, pokemon_id) end, refresh=gooey_buttons.minus_button
 		
 	}
 	table.insert(active_buttons, plus)
@@ -113,6 +154,14 @@ function M.setup_hp(nodes, pokemon_id)
 	update_hp_meter(nodes, max, current)
 end
 
+function M.setup_pp(nodes, pokemon_id)
+	local pokemon = storage.get_copy(pokemon_id)
+	local max = _pokemon.get_max_pp(pokemon)
+	local current = _pokemon.get_current_pp(pokemon)
+	gui.set_text(nodes["pokemon/txt_pp"],"PP: " .. current .. "/ " .. max)
+	update_pp_meter(nodes, max, current)
+end
+
 function M.create(nodes, pokemon_id)
 	local pokemon = storage.get_copy(pokemon_id)
 	active_nodes = nodes
@@ -122,6 +171,8 @@ function M.create(nodes, pokemon_id)
 	add_loyalty_buttons(nodes, pokemon)
 	M.setup_hp(nodes, pokemon_id)
 	add_hp_buttons(nodes, pokemon)
+	M.setup_pp(nodes, pokemon_id)
+	add_pp_buttons(nodes, pokemon)
 	M.setup_exp(nodes, pokemon_id)
 end
 
@@ -182,6 +233,25 @@ function M.on_message(message_id, message)
 		end
 	elseif message_id == hash("refresh_hp") then
 		M.setup_hp(active_nodes, active_pokemon_id)
+	elseif message_id == hash("update_pp") then
+		local active_pokemon_id = storage.list_of_ids_in_inventory()[message.active_index]
+		local current_pp = storage.get_pokemon_current_pp(active_pokemon_id)
+		local pp, expr = parse_number(message.str, current_pp)
+		M.add_pp(active_pokemon_id, pp)
+		M.setup_pp(active_nodes, active_pokemon_id)
+		information.refresh(active_pokemon_id)
+		if expr then
+			gameanalytics.addDesignEvent {
+				eventId = "Party:PP:Edit"
+			}
+		else
+			gameanalytics.addDesignEvent {
+				eventId = "Party:PP:Set",
+				value = pp
+			}
+		end
+	elseif message_id == hash("refresh_pp") then
+		M.setup_pp(active_nodes, active_pokemon_id)
 	end
 end
 

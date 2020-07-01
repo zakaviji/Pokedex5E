@@ -13,7 +13,6 @@ local active = {}
 local counters = {}
 local sorting = {}
 local initialized = false
-local max_active_pokemon = 6
 
 function M.is_initialized()
 	return initialized
@@ -40,33 +39,12 @@ local function getKeysSortedByValue(tbl, sortFunction)
 	return keys
 end
 
-function M.get_max_active_pokemon_range()
-	return 2,6
-end
-
-function M.get_max_active_pokemon()
-	return max_active_pokemon
-end
-
-function M.set_max_active_pokemon(new_max)
-	new_max = M.clamp_max_active_pokemon(new_max)
-	if new_max ~= max_active_pokemon then
-		max_active_pokemon = new_max
-		M.save()
-	end
-end
-
-function M.clamp_max_active_pokemon(new_max)
-	local range_min, range_max = M.get_max_active_pokemon_range()
-	return math.max(range_min, math.max(range_min, new_max))
-end
-
 function M.is_party_full()
 	local counter = 0
 	for _, _ in pairs(active) do
 		counter = counter + 1
 	end
-	return counter >= M.get_max_active_pokemon()
+	return counter >= 6
 end
 
 local function sort_on_index(a, b)
@@ -251,9 +229,19 @@ function M.get_pokemon_current_hp(id)
 	return get(id).hp.current
 end
 
+function M.get_pokemon_current_pp(id)
+	return get(id).pp.current
+end
+
 function M.set_pokemon_current_hp(id, hp)
 	local p = get(id)
 	p.hp.current = hp
+	M.save()
+end
+
+function M.set_pokemon_current_pp(id, pp)
+	local p = get(id)
+	p.pp.current = pp
 	M.save()
 end
 
@@ -312,12 +300,6 @@ function M.save()
 		defsave.set(profile, "active", active)
 		defsave.set(profile, "counters", counters)
 		defsave.set(profile, "sorting", sorting)
-
-		local settings = {
-			max_active_pokemon = max_active_pokemon
-		}
-		defsave.set(profile, "settings", settings)
-		
 		defsave.save(profile)
 	end
 end
@@ -332,10 +314,6 @@ function M.load(profile)
 	active = defsave.get(file_name, "active")
 	counters = defsave.get(file_name, "counters")
 	sorting = defsave.get(file_name, "sorting")
-
-	local settings = defsave.get(file_name, "settings")
-	max_active_pokemon = M.clamp_max_active_pokemon(settings.max_active_pokemon or 6)
-	
 	-- Default counters
 	if next(counters) == nil then
 		counters = {caught=0, released=0, seen=0}
@@ -401,7 +379,7 @@ function M.free_space_in_inventory()
 	for _, _ in pairs(active) do
 		index = index + 1
 	end
-	return index < M.get_max_active_pokemon(), index + 1
+	return index < 6, index + 1
 end
 
 function M.move_to_inventory(id)

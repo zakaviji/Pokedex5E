@@ -234,6 +234,10 @@ function M.get_experience_for_level(level)
 	return M.level_data(level).exp
 end
 
+function M.get_pp_for_level(level)
+	return M.level_data(level).pp
+end
+
 function M.get_senses(pokemon)
 	return M.get_pokemon(pokemon).Senses or {}
 end

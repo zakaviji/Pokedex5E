@@ -87,6 +87,10 @@ function M.show(index)
 		button.register(nodes["pokemon/hp_bg"], function()
 			monarch.show("input", {}, {sender=msg.url(), message="update_hp", allowed_characters="[%d%+%-]", default_text=storage.get_pokemon_current_hp(id)})
 		end)
+		
+		button.register(nodes["pokemon/pp_bg"], function()
+			monarch.show("input", {}, {sender=msg.url(), message="update_pp", allowed_characters="[%d%+%-]", default_text=storage.get_pokemon_current_pp(id)})
+		end)
 	else
 		local e = "Party can not show pokemon with id: " .. tostring(id) .. "\n" .. debug.traceback()
 		gameanalytics.addErrorEvent {
@@ -135,17 +139,20 @@ function M.switch_to_slot(index)
 end
 
 local function set_ids(nodes, index)
-	gui.set_id(nodes["pokemon/move/txt_pp_current"], "txt_pp_current")
-	gui.set_id(nodes["pokemon/move/txt_pp_max"], "txt_pp_max")
-	gui.set_id(nodes["pokemon/move/lbl_pp"], "lbl_pp")
+	--gui.set_id(nodes["pokemon/move/txt_pp_current"], "txt_pp_current")
+	--gui.set_id(nodes["pokemon/move/txt_pp_max"], "txt_pp_max")
+	--gui.set_id(nodes["pokemon/move/lbl_pp"], "lbl_pp")
+	gui.set_id(nodes["pokemon/move/lbl_pp_cost"], "lbl_pp_cost")
+	gui.set_id(nodes["pokemon/move/txt_pp_cost"], "txt_pp_cost")
 	gui.set_id(nodes["pokemon/move/move_stats"], "move_stats")
 	gui.set_id(nodes["pokemon/move/name"], "name")
 	gui.set_id(nodes["pokemon/move/element"], "element")
-	gui.set_id(nodes["pokemon/move/pp/btn_minus"], "btn_minus")
-	gui.set_id(nodes["pokemon/move/pp/btn_plus"], "btn_plus")
+	--gui.set_id(nodes["pokemon/move/pp/btn_minus"], "btn_minus")
+	--gui.set_id(nodes["pokemon/move/pp/btn_plus"], "btn_plus")
 	gui.set_id(nodes["pokemon/tab_bg_1"], "tab_bg_1")
 	gui.set_id(nodes["pokemon/move/move"], "move")
 	gui.set_id(nodes["pokemon/move/interaction_area"], "interaction_area")
+	gui.set_id(nodes["pokemon/move/use_bg"], "use_bg")
 end
 
 function M.create(index)

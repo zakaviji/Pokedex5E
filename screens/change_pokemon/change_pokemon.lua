@@ -201,7 +201,11 @@ end
 local function redraw_moves(self)
 	local position = vmath.vector3()
 	local _, c = _pokemon.have_feat(self.pokemon, "Extra Move")
-	local moves_count = 4 + c
+
+	-- zakaviji (2020/06/07): this change makes it easy for the user to keep adding moves
+	-- local moves_count = 4 + c
+	local moves_count = _pokemon.get_moves_count(self.pokemon) + 1
+	
 	M.config[hash("change_pokemon/moves")].open.y = M.config[hash("change_pokemon/moves")].closed.y + math.ceil(moves_count/ 2) * 70
 
 	for _, b in pairs(move_buttons_list) do
@@ -566,7 +570,6 @@ local function on_shiny_checked(self, checkbox)
 	_pokemon.set_shiny(self.pokemon, checkbox.checked)
 end
 
-
 local function change_level(self, level, multiplier)
 	_pokemon.set_current_level(self.pokemon, level + (1 * multiplier))
 	
@@ -577,6 +580,14 @@ local function change_level(self, level, multiplier)
 	
 	_pokemon.set_max_hp(self.pokemon, _pokemon.get_max_hp(self.pokemon) + extra_hp * multiplier)
 	_pokemon.set_current_hp(self.pokemon, _pokemon.get_current_hp(self.pokemon) + (extra_hp + con_mod) * multiplier)
+
+	local old_max_pp = _pokemon.get_max_pp(self.pokemon)
+	local new_max_pp = pokedex.get_pp_for_level(_pokemon.get_current_level(self.pokemon))
+	
+	_pokemon.set_max_pp(self.pokemon, new_max_pp)
+	if multiplier > 0 then -- on level increase, current and max PP should increase by same amount
+		_pokemon.set_current_pp(self.pokemon, _pokemon.get_current_pp(self.pokemon) + (new_max_pp - old_max_pp))
+	end
 end
 
 local function extra_buttons(self, action_id, action)

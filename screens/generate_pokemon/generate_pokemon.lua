@@ -32,8 +32,11 @@ function M.add_pokemon(species, level)
 	local max_hp = _pokemon.get_defaut_max_hp(pokemon)
 	local con = _pokemon.get_attributes(pokemon).CON
 	local con_mod = math.floor((con - 10) / 2)
-	pokemon.hp.max = max_hp
-	pokemon.hp.current = max_hp + (con_mod * level)
+	pokemon.hp.max = max_hp + (con_mod * level)
+	pokemon.hp.current = pokemon.hp.max
+
+	pokemon.pp.max = pokedex.get_pp_for_level(level)
+	pokemon.pp.current = pokemon.pp.max
 	
 	dex.set(pokemon.species.current, dex.states.CAUGHT)
 	storage.add(pokemon)
